@@ -1,0 +1,908 @@
+{
+    components: [
+        {
+            logic: {
+                config: {
+                    direction: "south"
+                },
+                type: "io"
+            },
+            slot: 0,
+            x: 64,
+            y: 32
+        },
+        {
+            logic: {
+                config: {
+                    direction: "up",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 1,
+            x: 448,
+            y: 144
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 2,
+            x: 112,
+            y: 144
+        },
+        {
+            logic: {
+                config: {
+                    outputs: 8
+                },
+                selected: 6,
+                type: "selector"
+            },
+            slot: 3,
+            x: 64,
+            y: 160
+        },
+        {
+            logic: {
+                config: {
+                    input_count: 7
+                },
+                type: "or_gate"
+            },
+            slot: 4,
+            x: 272,
+            y: 112
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 5,
+            x: 144,
+            y: 144
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 6,
+            x: 144,
+            y: 32
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 7,
+            x: 144,
+            y: 48
+        },
+        {
+            logic: {
+                config: {
+                    duration: 2L
+                },
+                type: "pulse_throttler"
+            },
+            slot: 8,
+            x: 272,
+            y: 192
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 9,
+            x: 144,
+            y: 64
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 10,
+            x: 144,
+            y: 80
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 11,
+            x: 144,
+            y: 96
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 12,
+            x: 144,
+            y: 112
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 13,
+            x: 144,
+            y: 128
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 14,
+            x: 112,
+            y: 128
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 15,
+            x: 112,
+            y: 48
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 16,
+            x: 112,
+            y: 32
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 17,
+            x: 112,
+            y: 64
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 18,
+            x: 112,
+            y: 80
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 19,
+            x: 112,
+            y: 96
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 20,
+            x: 112,
+            y: 112
+        },
+        {
+            logic: {
+                config: {
+                    direction: "east"
+                },
+                type: "io"
+            },
+            slot: 21,
+            x: 16,
+            y: 192
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 22,
+            x: 416,
+            y: 144
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 23,
+            x: 224,
+            y: 192
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 24,
+            x: 224,
+            y: 176
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 25,
+            x: 224,
+            y: 96
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 26,
+            x: 224,
+            y: 112
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 27,
+            x: 224,
+            y: 128
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 28,
+            x: 224,
+            y: 144
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 29,
+            x: 224,
+            y: 160
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 30,
+            x: 224,
+            y: 80
+        },
+        {
+            logic: {
+                output: 1b,
+                type: "not_gate"
+            },
+            slot: 31,
+            x: 352,
+            y: 208
+        },
+        {
+            logic: {
+                config: {
+                    direction: "west",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 32,
+            x: 48,
+            y: 128
+        },
+        {
+            logic: {
+                config: {
+                    delay: 3L,
+                    mode: "counter",
+                    reset_port: 1b
+                },
+                processed_ticks: 0L,
+                type: "sequencer"
+            },
+            slot: 33,
+            x: 304,
+            y: 208
+        },
+        {
+            logic: {
+                config: {},
+                type: "pulse_throttler"
+            },
+            slot: 34,
+            x: 272,
+            y: 224
+        }
+    ],
+    sticky_notes: [],
+    wires: [
+        {
+            input: {
+                index: 0,
+                slot: 6
+            },
+            output: {
+                index: 0,
+                slot: 16
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 7
+            },
+            output: {
+                index: 0,
+                slot: 15
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 17
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 10
+            },
+            output: {
+                index: 0,
+                slot: 18
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 11
+            },
+            output: {
+                index: 0,
+                slot: 19
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 12
+            },
+            output: {
+                index: 0,
+                slot: 20
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 13
+            },
+            output: {
+                index: 0,
+                slot: 14
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 5
+            },
+            output: {
+                index: 0,
+                slot: 2
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 16
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 15
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 14
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 20
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 19
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 18
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 2
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 17
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 20
+            },
+            output: {
+                index: 5,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 19
+            },
+            output: {
+                index: 4,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 18
+            },
+            output: {
+                index: 3,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 14
+            },
+            output: {
+                index: 6,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 17
+            },
+            output: {
+                index: 2,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 16
+            },
+            output: {
+                index: 0,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 15
+            },
+            output: {
+                index: 1,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 2
+            },
+            output: {
+                index: 7,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 30
+            },
+            output: {
+                index: 0,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 30
+            },
+            output: {
+                index: 0,
+                slot: 6
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 25
+            },
+            output: {
+                index: 1,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 25
+            },
+            output: {
+                index: 0,
+                slot: 7
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 26
+            },
+            output: {
+                index: 0,
+                slot: 9
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 26
+            },
+            output: {
+                index: 2,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 27
+            },
+            output: {
+                index: 0,
+                slot: 10
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 27
+            },
+            output: {
+                index: 3,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 28
+            },
+            output: {
+                index: 0,
+                slot: 11
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 28
+            },
+            output: {
+                index: 4,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 29
+            },
+            output: {
+                index: 0,
+                slot: 12
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 29
+            },
+            output: {
+                index: 5,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 24
+            },
+            output: {
+                index: 6,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 24
+            },
+            output: {
+                index: 0,
+                slot: 13
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 23
+            },
+            output: {
+                index: 7,
+                slot: 3
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 23
+            },
+            output: {
+                index: 0,
+                slot: 5
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 25
+            }
+        },
+        {
+            input: {
+                index: 2,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 26
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 30
+            }
+        },
+        {
+            input: {
+                index: 3,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 27
+            }
+        },
+        {
+            input: {
+                index: 6,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 24
+            }
+        },
+        {
+            input: {
+                index: 4,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 28
+            }
+        },
+        {
+            input: {
+                index: 5,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 29
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 3
+            },
+            output: {
+                index: 0,
+                slot: 21
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 32
+            },
+            output: {
+                index: 0,
+                slot: 21
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 1
+            },
+            output: {
+                index: 0,
+                slot: 22
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 22
+            },
+            output: {
+                index: 0,
+                slot: 4
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 34
+            },
+            output: {
+                index: 0,
+                slot: 2
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 8
+            },
+            output: {
+                index: 0,
+                slot: 23
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 33
+            },
+            output: {
+                index: 0,
+                slot: 34
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 33
+            },
+            output: {
+                index: 0,
+                slot: 8
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 22
+            },
+            output: {
+                index: 0,
+                slot: 31
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 31
+            },
+            output: {
+                index: 0,
+                slot: 33
+            }
+        }
+    ]
+}

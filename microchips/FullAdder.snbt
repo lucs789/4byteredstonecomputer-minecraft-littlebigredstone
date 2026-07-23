@@ -1,0 +1,293 @@
+{
+    components: [
+        {
+            logic: {
+                config: {},
+                type: "io"
+            },
+            slot: 0,
+            x: 80,
+            y: 16
+        },
+        {
+            logic: {
+                config: {
+                    direction: "west",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 1,
+            x: 288,
+            y: 80
+        },
+        {
+            logic: {
+                config: {
+                    direction: "east"
+                },
+                type: "io"
+            },
+            slot: 2,
+            x: 112,
+            y: 48
+        },
+        {
+            logic: {
+                config: {
+                    direction: "up",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 3,
+            x: 288,
+            y: 48
+        },
+        {
+            logic: {
+                config: {
+                    direction: "south"
+                },
+                type: "io"
+            },
+            slot: 4,
+            x: 112,
+            y: 80
+        },
+        {
+            logic: {
+                config: {
+                    input_count: 3
+                },
+                type: "xor_gate"
+            },
+            slot: 5,
+            x: 256,
+            y: 48
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 6,
+            x: 192,
+            y: 96
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 7,
+            x: 192,
+            y: 32
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 8,
+            x: 192,
+            y: 64
+        },
+        {
+            logic: {
+                config: {
+                    input_count: 3
+                },
+                type: "or_gate"
+            },
+            slot: 9,
+            x: 256,
+            y: 80
+        },
+        {
+            logic: {
+                config: {
+                    direction: "down"
+                },
+                type: "io"
+            },
+            slot: 10,
+            x: 48,
+            y: 16
+        },
+        {
+            logic: {
+                config: {},
+                type: "xor_gate"
+            },
+            slot: 11,
+            x: 112,
+            y: 16
+        }
+    ],
+    sticky_notes: [],
+    wires: [
+        {
+            input: {
+                index: 0,
+                slot: 11
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 8
+            },
+            output: {
+                index: 0,
+                slot: 2
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 8
+            },
+            output: {
+                index: 0,
+                slot: 4
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 7
+            },
+            output: {
+                index: 0,
+                slot: 11
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 7
+            },
+            output: {
+                index: 0,
+                slot: 4
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 6
+            },
+            output: {
+                index: 0,
+                slot: 11
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 6
+            },
+            output: {
+                index: 0,
+                slot: 2
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 8
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 7
+            }
+        },
+        {
+            input: {
+                index: 2,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 6
+            }
+        },
+        {
+            input: {
+                index: 2,
+                slot: 5
+            },
+            output: {
+                index: 0,
+                slot: 4
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 5
+            },
+            output: {
+                index: 0,
+                slot: 11
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 5
+            },
+            output: {
+                index: 0,
+                slot: 2
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 3
+            },
+            output: {
+                index: 0,
+                slot: 5
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 1
+            },
+            output: {
+                index: 0,
+                slot: 9
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 11
+            },
+            output: {
+                index: 0,
+                slot: 10
+            }
+        }
+    ]
+}

@@ -1,0 +1,234 @@
+{
+    components: [
+        {
+            logic: {
+                config: {},
+                type: "io"
+            },
+            slot: 0,
+            x: 176,
+            y: 112
+        },
+        {
+            logic: {
+                config: {
+                    direction: "east"
+                },
+                type: "io"
+            },
+            slot: 1,
+            x: 112,
+            y: 176
+        },
+        {
+            logic: {
+                config: {
+                    direction: "west",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 2,
+            x: 304,
+            y: 192
+        },
+        {
+            logic: {
+                config: {
+                    direction: "south",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 3,
+            x: 304,
+            y: 160
+        },
+        {
+            logic: {
+                config: {
+                    direction: "up",
+                    input: 0b,
+                    signal_strength: 15
+                },
+                type: "io"
+            },
+            slot: 4,
+            x: 304,
+            y: 128
+        },
+        {
+            logic: {
+                config: {
+                    auto_reset: 1b,
+                    delay: 24L,
+                    mode: "strong"
+                },
+                processed_ticks: 0L,
+                type: "sequencer"
+            },
+            slot: 5,
+            x: 192,
+            y: 176
+        },
+        {
+            logic: {
+                type: "t_flip_flop"
+            },
+            slot: 6,
+            x: 144,
+            y: 160
+        },
+        {
+            logic: {
+                output: 1b,
+                type: "not_gate"
+            },
+            slot: 7,
+            x: 176,
+            y: 144
+        },
+        {
+            logic: {
+                config: {},
+                type: "and_gate"
+            },
+            slot: 8,
+            x: 208,
+            y: 144
+        },
+        {
+            logic: {
+                config: {},
+                type: "or_gate"
+            },
+            slot: 9,
+            x: 240,
+            y: 160
+        },
+        {
+            logic: {
+                config: {},
+                type: "pulse_throttler"
+            },
+            slot: 10,
+            x: 272,
+            y: 160
+        }
+    ],
+    sticky_notes: [],
+    wires: [
+        {
+            input: {
+                index: 0,
+                slot: 6
+            },
+            output: {
+                index: 0,
+                slot: 1
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 7
+            },
+            output: {
+                index: 0,
+                slot: 6
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 5
+            },
+            output: {
+                index: 0,
+                slot: 6
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 5
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 9
+            },
+            output: {
+                index: 0,
+                slot: 8
+            }
+        },
+        {
+            input: {
+                index: 1,
+                slot: 8
+            },
+            output: {
+                index: 0,
+                slot: 7
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 8
+            },
+            output: {
+                index: 0,
+                slot: 0
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 10
+            },
+            output: {
+                index: 0,
+                slot: 9
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 2
+            },
+            output: {
+                index: 0,
+                slot: 10
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 3
+            },
+            output: {
+                index: 0,
+                slot: 10
+            }
+        },
+        {
+            input: {
+                index: 0,
+                slot: 4
+            },
+            output: {
+                index: 0,
+                slot: 10
+            }
+        }
+    ]
+}
