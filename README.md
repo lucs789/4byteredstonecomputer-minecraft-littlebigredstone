@@ -16,7 +16,7 @@ Required Mods: Litte Big Redstone, TesseractAPI (NeoForge), GuideMe.
 
 - Arithmetic Logic Unit (ALU): 8 full adders in series (1 full adder per microchip), also capable of subtraction;
 
-- Program Counter (PC): 1.2 second clock cycle, always jumps to the next memory address;
+- Program Counter (PC): 1.2 second clock cycle, always jumps to the next instruction memory address, making it Turing-incomplete;
 
 - Instruction Memory: 1 byte per microchip, meaning there are 8 sets of instructions ("lines"). In each set, you are able to input two registers (or numbers from the instruction memory itself, which is called Immediate Adressing Mode) into the ALU, decide the operation (add/sub) you want to perform, and then load the result into 1 or more registers;
 
